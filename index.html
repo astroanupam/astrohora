@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AstroHora Engine: Precision Muhurta Planner</title>
+<meta name="description" content="Cast your sidereal North Indian birth chart and see which of the 24 planetary hours (Hora) best serve your career, wealth, romance or health question.">
+<meta name="theme-color" content="#0a0720">
+<meta name="color-scheme" content="dark">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="AstroHora">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AstroHora Engine: Precision Muhurta Planner">
+<meta property="og:description" content="Your own North Indian chart, scored against the 24 planetary hours of any day.">
+<style>html,body{margin:0;background:#0a0720}#boot{display:grid;place-items:center;min-height:100vh;color:#c4b5fd;font:500 15px/1.4 system-ui,sans-serif;letter-spacing:.04em}</style>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="root"><div id="boot">Casting the heavens&hellip;</div></div>
+<noscript><p style="color:#fde68a;font:16px system-ui,sans-serif;padding:24px">AstroHora Engine needs JavaScript. Please turn it on and reload this page.</p></noscript>
+<script src="react.production.min.js"></script>
+<script src="react-dom.production.min.js"></script>
+<script src="app.js"></script>
+<script>
+if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js').catch(function () {});
+  });
+}
+</script>
+</body>
+</html>
